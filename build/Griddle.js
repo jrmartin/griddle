@@ -1056,7 +1056,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		      // Make sure that we load results a little before reaching the bottom.
 		      var compareHeight = scrollHeightDiff * 0.6;
 
-		      // Only update when scroll does not hit or pass virtual scroll bar bottom
+		      // Only update when scroll hits or pass virtual scroll bar bottom
 		      if (compareHeight <= -1) {
 		        // If the scroll position changed and the difference is greater than a row height
 		        if (this.props.rowHeight !== null && this.state.scrollTop !== scrollTop && Math.abs(this.state.scrollTop - scrollTop) >= this.getAdjustedRowHeight()) {
