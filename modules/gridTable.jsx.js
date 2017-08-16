@@ -73,7 +73,7 @@ var GridTable = React.createClass({
       var compareHeight = scrollHeightDiff * 0.6;
 
       // Only update when scroll does not hit or pass virtual scroll bar bottom
-      if (compareHeight >= 0) {
+      if (compareHeight <= -1) {
         // If the scroll position changed and the difference is greater than a row height
         if (this.props.rowHeight !== null && this.state.scrollTop !== scrollTop && Math.abs(this.state.scrollTop - scrollTop) >= this.getAdjustedRowHeight()) {
           var newState = {
